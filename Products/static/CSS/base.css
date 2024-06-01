@@ -1,0 +1,139 @@
+/* Navbar styles */
+.navbar-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.custom-navbar {
+  background-color: transparent;
+  /* overflow: hidden; */
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+  width: 93%;
+}
+
+.custom-navbar .custom-navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.custom-navbar a {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.custom-navbar a:hover {
+  color: #ffffff;
+}
+
+.custom-navbar .custom-navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+/* Dropdown styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.custom-dropdown-container {
+  position: relative;
+  z-index: 1000;
+  /* Ensure dropdown container is on top */
+}
+
+.custom-dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.custom-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 22px);
+  /* Position below the horizontal line */
+  left: 0;
+  background-color: rgba(102, 102, 102, 0.747);
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 160px;
+  z-index: 1001;
+  /* Ensure dropdown menu is on top */
+}
+
+.custom-dropdown-container:hover .custom-dropdown-menu,
+.custom-dropdown-container:focus-within .custom-dropdown-menu {
+  display: block;
+  /* Show dropdown on hover or focus */
+}
+
+.custom-dropdown-menu li {
+  list-style-type: none;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.custom-dropdown-menu li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.custom-dropdown-menu li a:hover {
+  color: #201d1d;
+}
+
+/* Navbar divider styles */
+.custom-navbar-divider {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* bottom container */
+.bottom-main-container{
+  background-color: black;
+  width: 100%;
+  height: max-content;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  color: white;
+}
+
+.sub-bottom-container{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  padding: 0 20px;
+  justify-content: center;
+  position: relative;
+}
+.kk-name{
+  font-weight: 700;
+  font-size: 30 px;
+}
+
+.thirtythree{
+  width: 33.33%;
+  padding: 20px;
+}
+
+.kk-paratext{
+  color: #a7a7a7;
+}

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block start %}
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('../static/images/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container{
+    font-family: Vollkorn, serif;
+    font-weight: 400;
+    color: white;
+    height: 861px;
+  }
+  h3{
+    padding-top: 150px;
+    font-family: Vollkorn, serif;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  h2{
+    padding-top: 30px;
+    font-family: Vollkorn, serif;
+    /* font-weight: bold; */
+    font-size: 24px;
+  }
+  h1{
+    padding-top: 30px;
+    font-family: Vollkorn, serif;
+    font-weight: bold;
+    font-size: 62px;
+  }
+</style>
+  <div class="container">
+    <h3>GOOD PLACE. GOOD FOOD.</h3>
+    <h1>A Really Good Place to Eat<br> In the City of Pune</h1>
+    <h2>Good food is the foundation of genuine happiness.<span style='font-size:100px;'>&#128578;</span></h2>
+    <a href="/menue" class="btn btn-light">Order Your Meal   <i class="bi bi-arrow-right"></i></a>
+  </div>
+{% endblock %}

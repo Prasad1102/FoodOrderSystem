@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% block start %}
+<style>
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .menu-item {
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: calc(33.333% - 40px); /* Adjust width and padding as needed */
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .menue-container {
+      padding: 20px;
+      background-color: rgba(218, 215, 215, 0.795);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: max-content;
+      /* Full viewport height minus navbar height */
+      width: 100%;
+      /* Full width */
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 0;
+    }
+
+    .display-menue {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+    }
+
+    .menue-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menue {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #383838;
+      padding: 10px 0;
+    }
+
+    .text-menue {
+      flex: 1;
+      padding-right: 20px;
+      color: rgb(15, 15, 15);
+    }
+
+    .image-menue img {
+      max-width: 220px;
+      height: auto;
+      padding-left: 20px;
+    }
+
+    .add-btn {
+      margin-left: 60px;
+      margin-top: 10px;
+      height: 40px;
+      width: 120px;
+      background-color: #ffffff; /* Green */
+      border: none;
+      color: rgb(0, 105, 9);
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      padding-top: 8px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+    }
+
+    .add-btn:hover{
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .price {
+      font-weight:700;
+    }
+    .desc{
+      color: #313131;
+    }
+    .product_name{
+      font-weight: 800;
+    }
+    .menue-Display{
+      color: rgb(37, 37, 37);
+      text-align: center;
+    }
+</style>
+
+<div class="menue-container">
+  <div class="display-menue">
+    <ul class="menue-list">
+      <h1 class="menue-Display">--Menue--</h1>
+      {% for prod in products %}
+      <li class="menue">
+        <div class="text-menue">
+          <h3 class="product_name">{{ prod.product_name }}</h3>
+          <p class="desc">{{ prod.product_description }}</p>
+          <p class="price">${{ prod.product_price }} only</p>
+        </div>
+        <div class="image-menue">
+          <img src="{{ prod.product_image.url }}" alt="{{ prod.product_name }}">
+          <div></div>
+          <a type="button" class="add-btn" href="{% url 'cart_add' prod.id %}">Add</a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}

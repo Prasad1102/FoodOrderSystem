@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block start %}
+<form class="col-6 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <!--csrf_token check that data is going from this server -->
+  <!-- enctype="multipart/form-data" is used to send an image to backend if not present only text will go to backend and image will not -->
+  <h3>Add Menue</h3>
+  <hr>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Product Name</label>
+    <input name="product_name" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Product Description</label>
+    <textarea name="product_description" class="form-control"></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Product Slug</label>
+    <input name="product_slug" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Product Price</label>
+    <input name="product_price" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Product Demo Price</label>
+    <input name="product_demo_price" type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Product Image</label>
+    <input type="file" name="product_image" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-success">Add Reciepe</button>
+</form>
+{% endblock %}

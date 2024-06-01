@@ -1,0 +1,183 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../images/About\ Us\ Image.jpg');
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: transparent;
+  overflow: hidden;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+  /* Ensure the navbar stays above other content */
+}
+
+.image-container {
+  background-color: rgba(73, 73, 73, 0.795);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(60vh - 70px);
+  /* Full viewport height minus navbar height */
+  width: 100%;
+  /* Full width */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+.story-container {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 70px);
+  /* Full viewport height minus navbar height */
+  width: 100%;
+  /* Full width */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+.navbar a,
+.navbar .navbar-brand {
+  color: white;
+}
+
+.navbar a:hover {
+  color: lightgray;
+}
+
+.navbar-divider {
+  background-color: white;
+}
+
+.about-us-text {
+  font-size: 72px;
+  color: rgb(252, 250, 250);
+  margin-bottom: 50px;
+}
+
+.main-aboutus-container {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.quote {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  margin-top: 60px;
+}
+
+/* ____________________________________________Our Story Container CSS______________________ */
+.story-container {
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  height: 50vh;
+  background-color: #f8f9fa;
+  /* Light background color */
+}
+
+.first-container {
+  display: flex;
+  width: 80%;
+}
+
+.ourStory-container {
+  margin-right: 20px;
+  /* Add spacing between elements */
+  font-size: 98px;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  width: 30%;
+}
+
+.storyPara-container {
+  width: 70%;
+}
+
+.ourStory-container h1 {
+  font-size: 62px;
+  margin-top: 30px;
+}
+
+.storyPara-container p {
+  margin-top: 30px;
+  margin-right: 130px;
+  padding-right: 80px;
+  font-size: 15px;
+  color: rgb(95, 95, 95);
+}
+
+/* _____________________________________Our Speciality Container CSS________________________ */
+.ourSpeciality-container {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  height: 50vh;
+  background-color: rgba(2, 2, 2, 0.753);
+}
+
+.speciality-width {
+  display: flex;
+  width: 70%;
+}
+
+.speciality-text-container {
+  width: 30%;
+  color: #f8f9fa;
+}
+
+.image-containers {
+  color: #f8f9fa;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.images {
+  display: flex;
+  width: 70%;
+}
+
+.image {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.speciality-text-container h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.speciality-text-container p {
+  font-size: 19px;
+}
+
+img {
+  height: 150px;
+  width: auto;
+}
+
+.makeDistance {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.image p {
+  text-align: center;
+}
