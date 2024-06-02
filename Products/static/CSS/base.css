@@ -137,3 +137,29 @@ body {
 .kk-paratext{
   color: #a7a7a7;
 }
+
+
+/* side scrole bar */
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #63108a;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #ff8484;
+}
+
+/* Firefox Browsers */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #351919 #c5a0a0;
+}
