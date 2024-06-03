@@ -15,7 +15,7 @@ The FoodOrderSystem is a web application designed to simplify the process of ord
 
 ### Home Page
 
-![Home Page](/FoodOrderingSystem/Products/static/images/home.png)
+![Home Page](/Products/static/images/home.png)
 
 ### About Page
 
