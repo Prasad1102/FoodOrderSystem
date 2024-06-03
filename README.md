@@ -19,11 +19,11 @@ The FoodOrderSystem is a web application designed to simplify the process of ord
 
 ### About Page
 
-![About Page](/FoodOrderingSystem/Products/static/images/about.png)
+![About Page](/Products/static/images/about.png)
 
 ### Menu Page
 
-![Menu Page](/FoodOrderingSystem/Products/static/images/menue.png)
+![Menu Page](/Products/static/images/menue.png)
 
 ## Installation
 
