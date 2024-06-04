@@ -7,8 +7,6 @@ The FoodOrderSystem is a web application designed to simplify the process of ord
 ## Features
 
 - Browse the menu with various food items.
-- Place orders with ease.
-- Track the status of your order in real-time.
 - User authentication and profile management.
 
 ## Screenshots
